@@ -1,0 +1,216 @@
+import React from 'react';
+import { 
+  Hash,
+  Hexagon,
+  Boxes,
+  BarChart3,
+  Route,
+  ShieldCheck,
+  Mail,
+  MessageCircle,
+  Twitter,
+  Globe,
+  Calendar,
+  Users,
+  Flame,
+  Rocket,
+  Lock
+} from 'lucide-react';
+
+const WhitePaper = () => {
+  return (
+    <div className="min-h-screen bg-white">
+      {/* Header */}
+      <header className="bg-gradient-to-r from-amber-50 to-amber-100 py-16">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-center mb-6">
+            <Hexagon className="w-16 h-16 text-amber-400" />
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-4">
+            Hive Utility Fund (HTF)
+          </h1>
+          <p className="text-center text-gray-600 max-w-2xl mx-auto">
+            An ETF-styled cryptocurrency fund built on the Solana blockchain
+          </p>
+        </div>
+      </header>
+
+      {/* Contact Info */}
+      <div className="bg-white py-6 border-b border-gray-200">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-600">
+            <a href="http://hiveutilityfund.com" className="flex items-center gap-2">
+              <Globe className="w-4 h-4 text-amber-400" />
+              hiveutilityfund.com
+            </a>
+            <a href="https://x.com/HTF_Planner" className="flex items-center gap-2">
+              <Twitter className="w-4 h-4 text-amber-400" />
+              @HTF_Planner
+            </a>
+            <a href="https://t.me/+Uyn8TM3YSVw0ZmVl" className="flex items-center gap-2">
+              <MessageCircle className="w-4 h-4 text-amber-400" />
+              RevHive Telegram
+            </a>
+            <a href="mailto:hiveutilityfund@gmail.com" className="flex items-center gap-2">
+              <Mail className="w-4 h-4 text-amber-400" />
+              Email Us
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <main className="container mx-auto px-4 py-12">
+        {/* Executive Summary */}
+        <section className="mb-16">
+          <div className="flex items-center gap-4 mb-6">
+            <Hash className="w-8 h-8 text-amber-400 flex-shrink-0" />
+            <h2 className="text-2xl font-bold text-gray-800">Executive Summary</h2>
+          </div>
+          <p className="text-gray-600 leading-relaxed">
+            Hive Utility Fund (HTF) is an ETF-styled cryptocurrency fund built on the Solana blockchain. 
+            Unlike speculative tokens that rely on hype, HTF strategically invests in proven utility-driven 
+            Solana tokens with real-world applications. As these investments appreciate in value, the fund 
+            liquidates profits and reinvests them into buybacks, burns, token holder dividends, and 
+            ecosystem growth.
+          </p>
+        </section>
+
+        {/* Introduction */}
+        <section className="mb-16">
+          <div className="flex items-center gap-4 mb-6">
+            <Hexagon className="w-8 h-8 text-amber-400 flex-shrink-0" />
+            <h2 className="text-2xl font-bold text-gray-800">Introduction</h2>
+          </div>
+          <p className="text-gray-600 leading-relaxed">
+            HTF takes a long-term approach by mirroring traditional Index Funds, investing in a diverse 
+            set of Solana-based assets to generate consistent returns for holders. By leveraging buybacks, 
+            burns, and SOL dividend airdrops, HTF ensures sustainable growth and value appreciation over time.
+          </p>
+        </section>
+
+        {/* Tokenomics Grid */}
+        <section className="mb-16">
+          <div className="flex items-center gap-4 mb-6">
+            <Boxes className="w-8 h-8 text-amber-400 flex-shrink-0" />
+            <h2 className="text-2xl font-bold text-gray-800">Tokenomics</h2>
+          </div>
+          <div className="grid grid-cols-3 gap-6">
+            <div className="bg-amber-50 p-6 rounded-lg h-32 flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <BarChart3 className="w-6 h-6 text-amber-400 flex-shrink-0" />
+                <h3 className="font-semibold text-gray-800">50% – Investment Fund</h3>
+              </div>
+              <p className="text-gray-600">Solana utility token acquisitions</p>
+            </div>
+            <div className="bg-amber-50 p-6 rounded-lg h-32 flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <Users className="w-6 h-6 text-amber-400 flex-shrink-0" />
+                <h3 className="font-semibold text-gray-800">10% – Marketing</h3>
+              </div>
+              <p className="text-gray-600">Growth and partnerships</p>
+            </div>
+            <div className="bg-amber-50 p-6 rounded-lg h-32 flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <Rocket className="w-6 h-6 text-amber-400 flex-shrink-0" />
+                <h3 className="font-semibold text-gray-800">10% – Team</h3>
+              </div>
+              <p className="text-gray-600">Development and compensation</p>
+            </div>
+            <div className="bg-amber-50 p-6 rounded-lg h-32 flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <Route className="w-6 h-6 text-amber-400 flex-shrink-0" />
+                <h3 className="font-semibold text-gray-800">10% – Airdrops & Rewards</h3>
+              </div>
+              <p className="text-gray-600">SOL dividends for HTF holders</p>
+            </div>
+            <div className="bg-amber-50 p-6 rounded-lg h-32 flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <Flame className="w-6 h-6 text-amber-400 flex-shrink-0" />
+                <h3 className="font-semibold text-gray-800">10% – Burns</h3>
+              </div>
+              <p className="text-gray-600">Reducing token supply to enhance scarcity</p>
+            </div>
+            <div className="bg-amber-50 p-6 rounded-lg h-32 flex flex-col">
+              <div className="flex items-center gap-3 mb-4">
+                <Lock className="w-6 h-6 text-amber-400 flex-shrink-0" />
+                <h3 className="font-semibold text-gray-800">10% – Future Growth</h3>
+              </div>
+              <p className="text-gray-600">Long-term sustainability</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Roadmap */}
+        <section className="mb-16">
+          <div className="flex items-center gap-4 mb-6">
+            <Calendar className="w-8 h-8 text-amber-400 flex-shrink-0" />
+            <h2 className="text-2xl font-bold text-gray-800">Roadmap</h2>
+          </div>
+          <div className="grid grid-cols-2 gap-6">
+            {[
+              {
+                title: "Q1 2025",
+                content: "Token launch, marketing, initial investments, first buybacks"
+              },
+              {
+                title: "Q2 2025",
+                content: "Dividend payouts, token burns, governance discussions"
+              },
+              {
+                title: "Q3-Q4 2025",
+                content: "Automation, partnerships, staking, potential exchange listings"
+              },
+              {
+                title: "2026+",
+                content: "Long-term expansion & cross-chain potential"
+              }
+            ].map((phase, index) => (
+              <div key={index} className="border border-amber-200 p-6 rounded-lg h-40 flex flex-col">
+                <h3 className="font-bold text-amber-600 mb-3">{phase.title}</h3>
+                <p className="text-gray-600">{phase.content}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Additional Core Use Cases */}
+        <section className="mb-16">
+          <div className="flex items-center gap-4 mb-6">
+            <Users className="w-8 h-8 text-amber-400 flex-shrink-0" />
+            <h2 className="text-2xl font-bold text-gray-800">Additional Core Use Cases</h2>
+          </div>
+          <p className="text-gray-600 leading-relaxed">
+            HTF plans to implement governance mechanisms, allowing token holders to vote on investment decisions. 
+            Future staking opportunities may also be introduced, rewarding long-term holders while integrating 
+            with the larger DeFi ecosystem.
+          </p>
+        </section>
+
+        {/* Security */}
+        <section className="mb-16">
+          <div className="flex items-center gap-4 mb-6">
+            <ShieldCheck className="w-8 h-8 text-amber-400 flex-shrink-0" />
+            <h2 className="text-2xl font-bold text-gray-800">Security & Smart Contract</h2>
+          </div>
+          <p className="text-gray-600 leading-relaxed">
+            HTF operates on a secure, immutable Solana smart contract. Future audits may be conducted 
+            to ensure maximum transparency. Liquidity is automatically created on Pump.fun, reducing 
+            the risk of manipulation.
+          </p>
+        </section>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-gray-50 py-8">
+        <div className="container mx-auto px-4">
+          <p className="text-center text-gray-600 text-sm">
+            &copy; 2025 Hive Utility Fund. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default WhitePaper;
